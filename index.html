@@ -21,14 +21,29 @@
             font-family: 'Lato', sans-serif;
         }
     </style>
+
+    <!-- tailwind config customization -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'primary-bg-color': '#F85559'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body class="font-lato">
     <header>
-        <nav class="">
-            <div class="navbar">
+        <!-- navigation bar -->
+        <nav class="mx-60 mt-12 bg-primary-bg-color rounded-full">
+            <div class="navbar items-center text-white">
                 <div class="navbar-start">
-                    <ul tabindex="0" class="mt-3 p-2 flex flex-row">
+                    <ul tabindex="0" class="p-2 flex flex-row gap-x-7">
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
@@ -40,8 +55,9 @@
                     <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
                 </div>
                 <div class="navbar-end">
-                    <div class="form-control">
-                        <input type="text" placeholder="Search" class="input input-bordered md:w-auto lg:w-auto" />
+                    <div class="form-control flex flex-row">
+                        <input type="text" placeholder="Search" class="input input-bordered rounded-full md:w-auto lg:w-auto" />
+                        <i class="fa-solid fa-magnifying-glass text-inherit"></i>
                     </div>
                 </div>
             </div>
