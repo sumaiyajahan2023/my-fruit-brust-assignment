@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Fruit Burst</title>
+
+    <!-- Daisy ui integration -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Shared styles -->
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <header></header>
+
+<body class="font-lato">
+    <header>
+        <nav class="">
+            <div class="navbar">
+                <div class="navbar-start">
+                    <ul tabindex="0" class="mt-3 p-2 flex flex-row">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-center">
+                    <img src="images/logo.png" alt="">
+                    <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
+                </div>
+                <div class="navbar-end">
+                    <div class="form-control">
+                        <input type="text" placeholder="Search" class="input input-bordered md:w-auto lg:w-auto" />
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
     <main></main>
     <footer></footer>
 </body>
+
 </html>
