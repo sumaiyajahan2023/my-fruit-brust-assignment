@@ -43,14 +43,22 @@
 <body class="font-lato">
     <header>
         <!-- navigation bar -->
-        <nav class="mx-2 mt-2 md:mx-12 md:mt-6 lg:mx-32 lg:mt-12 bg-primary-bg-color rounded-full py-7 px-4">
-            <div class="navbar items-center text-white flex lg:flex-row">
+        <nav class="mx-2 mt-2 md:mx-12 md:mt-6 lg:mx-32 lg:mt-12 lg:bg-primary-bg-color rounded-full py-7 px-4">
+            <div class="navbar items-center text-black lg:text-white flex lg:flex-row">
                 <div class="navbar-start">
-                    <ul tabindex="0" class="p-2 flex flex-row gap-x-7 text-lg font-medium">
-                        <a href=""><li>Home</li></a>
-                        <a href=""><li>About Us</li></a>
-                        <a href=""><li>Shop</li></a>
-                        <a href=""><li>All Fruits</li></a>
+                    <ul tabindex="0" class="p-2 lg:flex lg:flex-row gap-x-7 text-lg font-medium">
+                        <a href="">
+                            <li>Home</li>
+                        </a>
+                        <a href="">
+                            <li>About Us</li>
+                        </a>
+                        <a href="">
+                            <li>Shop</li>
+                        </a>
+                        <a href="">
+                            <li>All Fruits</li>
+                        </a>
                     </ul>
                 </div>
                 <div class="navbar-center">
@@ -58,7 +66,7 @@
                     <a class="btn btn-ghost normal-case text-4xl font-bold">Fruit Burst</a>
                 </div>
                 <div class="navbar-end">
-                    <div class="form-control flex flex-row items-center relative">
+                    <div class="form-control lg:flex lg:flex-row hidden items-center relative">
                         <input type="text" placeholder="Search"
                             class="input input-bordered rounded-full md:w-auto lg:w-auto" />
                         <i class="fa-solid fa-magnifying-glass text-[#121212] absolute left-40"></i>
@@ -135,7 +143,8 @@
                 <!-- Text description -->
                 <div class="space-y-6">
                     <h1 class="text-5xl font-extrabold">Deal of the day</h1>
-                    <p class="text-base font-medium">Don't miss out on our daily fruit specials! Explore the "Deal of the Day" section for mouthwatering discounts on fresh produce.</p>
+                    <p class="text-base font-medium">Don't miss out on our daily fruit specials! Explore the "Deal of
+                        the Day" section for mouthwatering discounts on fresh produce.</p>
                 </div>
                 <!-- Countdown -->
                 <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
@@ -260,7 +269,9 @@
                 <div class="hero-content text-center text-neutral-content flex flex-col">
                     <div class="max-w-md">
                         <h1 class="mb-5 text-5xl font-extrabold">Meet the team section</h1>
-                        <p class="mb-5 text-base font-medium">Discover the vibrant personalities behind our fruits online shop! Meet the team of passionate experts, each with a deep love for fresh produce.</p>
+                        <p class="mb-5 text-base font-medium">Discover the vibrant personalities behind our fruits
+                            online shop! Meet the team of passionate experts, each with a deep love for fresh produce.
+                        </p>
                     </div>
                     <!-- Cards -->
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6">
@@ -351,7 +362,7 @@
             </p>
         </div>
         <!-- footer links -->
-        <div class="grid grid-flow-col gap-4">
+        <div class="grid grid-cols-4 lg:grid-flow-col gap-4">
             <a class="link link-hover">Home</a>
             <a class="link link-hover">About us</a>
             <a class="link link-hover">All Fruits</a>
