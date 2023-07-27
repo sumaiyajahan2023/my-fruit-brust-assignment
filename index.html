@@ -139,7 +139,7 @@
                 </div>
             </div>
         </section>
-        <!-- Modal start -->
+        <!-- Relative start -->
         <section class="relative hidden lg:grid text-xl	font-medium">
             <div class="grid grid-flow-col w-9/12 bg-white absolute -top-24 left-48">
                 <!-- card 1 -->
@@ -245,7 +245,18 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
                         <div class="card-actions">
-                            <button class="btn text-primary-bg-color border-0 bg-transparent">Details</button>
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="btn text-primary-bg-color border-0 bg-transparent" onclick="my_modal_1.showModal()">Details</button>
+                            <dialog id="my_modal_1" class="modal">
+                                <form method="dialog" class="modal-box">
+                                    <h3 class="font-bold text-lg">Hello!</h3>
+                                    <p class="py-4">Press ESC key or click the button below to close</p>
+                                    <div class="modal-action">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn">Close</button>
+                                    </div>
+                                </form>
+                            </dialog>
                         </div>
                     </div>
                 </div>
