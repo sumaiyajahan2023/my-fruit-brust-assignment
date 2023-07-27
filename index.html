@@ -35,15 +35,18 @@
             }
         }
     </script>
+
+    <!-- font awesome integration -->
+    <script src="https://kit.fontawesome.com/9e5b895bd6.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="font-lato">
     <header>
         <!-- navigation bar -->
-        <nav class="mx-60 mt-12 bg-primary-bg-color rounded-full">
+        <nav class="mx-32 mt-12 bg-primary-bg-color rounded-full py-7 px-4">
             <div class="navbar items-center text-white">
                 <div class="navbar-start">
-                    <ul tabindex="0" class="p-2 flex flex-row gap-x-7">
+                    <ul tabindex="0" class="p-2 flex flex-row gap-x-7 text-lg">
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
@@ -52,12 +55,13 @@
                 </div>
                 <div class="navbar-center">
                     <img src="images/logo.png" alt="">
-                    <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
+                    <a class="btn btn-ghost normal-case text-4xl">Fruit Burst</a>
                 </div>
                 <div class="navbar-end">
-                    <div class="form-control flex flex-row">
-                        <input type="text" placeholder="Search" class="input input-bordered rounded-full md:w-auto lg:w-auto" />
-                        <i class="fa-solid fa-magnifying-glass text-inherit"></i>
+                    <div class="form-control flex flex-row items-center relative">
+                        <input type="text" placeholder="Search"
+                            class="input input-bordered rounded-full md:w-auto lg:w-auto" />
+                        <i class="fa-solid fa-magnifying-glass text-[#121212] absolute left-40"></i>
                     </div>
                 </div>
             </div>
